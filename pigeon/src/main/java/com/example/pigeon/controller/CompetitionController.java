@@ -29,19 +29,19 @@ public class CompetitionController {
     @PostMapping("/add")
     public ResponseEntity<String> addCompetition(@RequestBody CompetitionDto competitionDto, HttpSession session) {
         System.out.println("Received CompetitionDto: " + competitionDto);
-        String userId = (String) session.getAttribute("utilisateurId");
+        Long userId = (Long) session.getAttribute("utilisateurId");
         if (userId == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Utilisateur non authentifié");
         }
 
 
         Role role = (Role) session.getAttribute("utilisateurRole");
-        if (role != Role.organisateur) {
+        if (role != Role.ROLE_ORGANIZER) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Accès refusé : rôle 'organisateur' requis");
         }
 
 
-        List<String> pigeonIds = competitionDto.getPigeonIds();
+        List<Long> pigeonIds = competitionDto.getPigeonIds();
         System.out.println("Pigeon IDs requested: " + pigeonIds);
 
 
@@ -68,7 +68,7 @@ public class CompetitionController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CompetitionDto> getCompetitionById(@PathVariable String id) {
+    public ResponseEntity<CompetitionDto> getCompetitionById(@PathVariable Long id) {
         CompetitionDto competitionDto = competitionService.getCompetitionById(id);
         if (competitionDto != null) {
             return ResponseEntity.ok(competitionDto);
@@ -79,7 +79,7 @@ public class CompetitionController {
 
     @PatchMapping("/{id}/status")
     public ResponseEntity<String> modifyStatus(
-            @PathVariable String id,
+            @PathVariable Long id,
             @RequestBody CompetitionRequestDto requestDto,
             HttpSession session) {
 
@@ -87,13 +87,13 @@ public class CompetitionController {
         System.out.println("Received request to update status for competition ID: " + id + " with estTermine: " + requestDto.getEstTermine());
 
 
-        String userId = (String) session.getAttribute("utilisateurId");
+        Long userId = (Long) session.getAttribute("utilisateurId");
         if (userId == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Utilisateur non authentifié");
         }
 
         Role role = (Role) session.getAttribute("utilisateurRole");
-        if (role != Role.organisateur) {
+        if (role != Role.ROLE_ORGANIZER) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Accès refusé : rôle 'organisateur' requis");
         }
 
