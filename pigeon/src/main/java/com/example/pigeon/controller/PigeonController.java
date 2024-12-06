@@ -43,24 +43,22 @@ public class PigeonController {
         return ResponseEntity.ok("Pigeon ajouté avec succès");
     }
 
-
+    @PreAuthorize("hasRole('ORGANIZER')")
     @GetMapping
     public ResponseEntity<List<Pigeon>> getAllPigeons() {
         List<Pigeon> pigeons = pigeonService.getAllPigeons();
         return ResponseEntity.ok(pigeons);
     }
 
+    @PreAuthorize("hasRole('ORGANIZER')")
+    @GetMapping("/user")
+    public ResponseEntity<List<Pigeon>> getPigeonsByUserId(HttpSession session) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
+        Long userId = userDetails.getUtilisateurId();
 
-//    @GetMapping("/user")
-//    public ResponseEntity<List<Pigeon>> getPigeonsByUserId(HttpSession session) {
-//        Long userId = (Long) session.getAttribute("utilisateurId");
-//
-//        if (userId == null) {
-//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-//        }
-//
-//        List<Pigeon> pigeons = pigeonService.getPigeonsByUserId(userId);
-//        return ResponseEntity.ok(pigeons);
-//    }
+        List<Pigeon> pigeons = pigeonService.getPigeonsByUserId(userId);
+        return ResponseEntity.ok(pigeons);
+    }
 
 }

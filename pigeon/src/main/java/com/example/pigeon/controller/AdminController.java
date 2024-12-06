@@ -13,13 +13,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin")
+@PreAuthorize("hasRole('ADMIN')")
 public class AdminController {
     @Autowired
     private UserService userService;
 
 
     @GetMapping("/users")
-    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<UtilisateurDto>> getAllUtilisateurs() {
         List<UtilisateurDto> utilisateurs = userService.getAllUtilisateurs()
                 .stream()
@@ -30,7 +30,6 @@ public class AdminController {
 
 
     @PutMapping("/users/{userId}/role")
-    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<UtilisateurDto> changeUserRole(
             @PathVariable Long userId,
             @RequestBody Role newRole) {

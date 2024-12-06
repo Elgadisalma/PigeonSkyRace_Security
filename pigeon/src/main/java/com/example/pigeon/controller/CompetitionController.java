@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/competition")
+@PreAuthorize("hasRole('ORGANIZER') or hasRole('ADMIN')")
 public class CompetitionController {
 
     @Autowired
@@ -29,7 +30,6 @@ public class CompetitionController {
     private PigeonService pigeonService;
 
 
-    @PreAuthorize("hasRole('ORGANIZER') or hasRole('ADMIN')")
     @PostMapping("/add")
     public ResponseEntity<String> addCompetition(@RequestBody CompetitionDto competitionDto) {
         System.out.println("Received CompetitionDto: " + competitionDto);
@@ -69,7 +69,6 @@ public class CompetitionController {
         }
     }
 
-    @PreAuthorize("hasRole('ORGANIZER') or hasRole('ADMIN')")
     @PatchMapping("/{id}/status")
     public ResponseEntity<String> modifyStatus(
             @PathVariable Long id,
