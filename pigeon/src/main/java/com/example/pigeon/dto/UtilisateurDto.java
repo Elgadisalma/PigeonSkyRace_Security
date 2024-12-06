@@ -2,6 +2,8 @@ package com.example.pigeon.dto;
 
 import com.example.pigeon.entity.Role;
 import com.example.pigeon.entity.Utilisateur;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -24,7 +26,8 @@ public class UtilisateurDto {
     @NotNull(message = "Le mot de passe ne peut pas être vide.")
     private String motDePasse;
 
-    @NotNull(message = "Le rôle ne peut pas être vide.")
+    @Enumerated(EnumType.STRING)
+//    @NotNull(message = "Le rôle ne peut pas être vide.")
     private Role role;
 
     public static UtilisateurDto toDto(Utilisateur entity) {
