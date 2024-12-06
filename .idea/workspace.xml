@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae3c3cd-83d3-4657-82ee-654a1f702139" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pigeon/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/PigeonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/PigeonApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/controller/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/controller/CompetitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/controller/PigeonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/controller/PigeonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/controller/ResultatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/controller/ResultatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/dto/CompetitionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/dto/CompetitionDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/dto/PigeonDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/dto/PigeonDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/dto/ResultatDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/dto/ResultatDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Pigeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Pigeon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Resultat.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Resultat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/entity/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/CompetitionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/CompetitionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/PigeonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/PigeonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/ResultatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/ResultatRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/UtilisateurRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/repository/UtilisateurRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/CalculService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/CalculService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/CompetitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/PigeonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/PigeonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/ResultatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/ResultatService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/CalculServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/CalculServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/CompetitionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/CompetitionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/PigeonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/PigeonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/ResultatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/ResultatServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/java/com/example/pigeon/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/PigeonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/PigeonApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/CalculServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/CalculServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/CompetitionServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/CompetitionServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/PigeonServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/PigeonServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/ResultatServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/ResultatServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pigeon/src/test/java/com/example/pigeon/service/impl/UserServiceImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="1ae3c3cd-83d3-4657-82ee-654a1f702139" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
